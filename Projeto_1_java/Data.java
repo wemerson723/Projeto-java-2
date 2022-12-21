@@ -100,7 +100,7 @@ class Data{
             return new Data();
         }
     }
-    private void Data(){
+    private Data(){
         try {
             this.segundos = -1;
             this.minutos = -1; 
