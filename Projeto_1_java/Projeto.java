@@ -48,8 +48,8 @@ class Projeto {
         public void Delete_atividades(){        this.atividades = new ArrayList<Atividade>();    }
         public void Delete_valor_bolsa(){       this.valor_bolsa = 0;                            }
         public void Delete_periodo_vigencia(){ this.periodo_vigencia = 0;                        }
-        public void Delete_data_inicio(){       this.data_inicio = new Data();                   }
-        public void Delete_data_termino(){      this.data_termino = new Data();                  }
+        public void Delete_data_inicio(){       this.data_inicio = new Data.DataBuilder().segundos(-1).minutos(-1).horas(-1).dia(-1).mes(-1).ano(-1).CriarData();                   }
+        public void Delete_data_termino(){      this.data_termino = new Data.DataBuilder().segundos(-1).minutos(-1).horas(-1).dia(-1).mes(-1).ano(-1).CriarData();                  }
 
 
         public int Check_Usuario(String nome){
